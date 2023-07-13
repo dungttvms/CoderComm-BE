@@ -24,13 +24,12 @@ const calculateReactions = async (targetId, targetType) => {
       },
     },
   ]);
-  console.log(stats);
   const reactions = {
     like: (stats[0] && stats[0].like) || 0,
     dislike: (stats[0] && stats[0].dislike) || 0,
   };
   await mongoose.model(targetType).findByIdAndUpdate(targetId, { reactions });
-  return stats;
+  return reactions;
 };
 
 reactionController.saveReaction = catchAsync(async (req, res, next) => {
