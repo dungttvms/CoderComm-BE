@@ -5,8 +5,8 @@ const mongoose = require("mongoose");
 const validators = {};
 validators.validate = (validationArray) => async (req, res, next) => {
   await Promise.all(validationArray.map((validation) => validation.run(req)));
-  console.log("thông số nhập vào", req.body);
   const errors = validationResult(req);
+
   // console.log("Errors", errors);
   if (errors.isEmpty()) return next();
 

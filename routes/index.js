@@ -11,18 +11,18 @@ router.use("/users", userApi);
 
 //comment API
 const commentApi = require("./comment.api");
-router.use("/comments", userApi);
+router.use("/comments", commentApi);
 
 //friend API
 const friendApi = require("./friend.api");
-router.use("/friends", userApi);
+router.use("/friends", friendApi);
 
 //post API
 const postApi = require("./post.api");
-router.use("/posts", userApi);
+router.use("/posts", postApi);
 
 //reaction API
 const reactionApi = require("./reaction.api");
-router.use("/reactions", userApi);
+router.use("/reactions", reactionApi);
 
 module.exports = router;

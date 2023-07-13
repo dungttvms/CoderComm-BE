@@ -2,15 +2,15 @@
 
 ### Authentication
 
-- [ ] As a user, I can register for a new account with my name, email and password
-- [ ] As a user, I can sign in with my Email and password.
+- [x] As a user, I can register for a new account with my name, email and password
+- [x] As a user, I can sign in with my Email and password.
 
 ### Users
 
-- [ ] As a user, I can see a list of other users so that I can send, accept or decline friend requests.
-- [ ] As a user, I can get my current profile info (stay signed in after page refresh)
-- [ ] As a user, I can see the profile of a specific user given a user ID
-- [ ] As a user, I can update mu profile info like Avatar, Company, Job Title, Social Links and short description
+- [x] As a user, I can see a list of other users so that I can send, accept or decline friend requests.
+- [x] As a user, I can get my current profile info (stay signed in after page refresh)
+- [x] As a user, I can see the profile of a specific user given a user ID
+- [x] As a user, I can update mu profile info like Avatar, Company, Job Title, Social Links and short description
 
 ### Posts
 
